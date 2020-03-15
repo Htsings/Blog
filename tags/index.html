@@ -81,6 +81,8 @@
         <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/Natsu/css/style.min.css?MKetZV3cUTfDxvMffaOezg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
         
+            
+        
 
     
 
@@ -162,7 +164,7 @@
 
     <style>
       body{
-        background-image: url(/img/bg.jpg);
+        background-image: url(/Natsu/img/bg.jpg);
       }
     </style>
 
@@ -316,7 +318,7 @@
 
 <div class=" material-tagscloud">
     <div class="material-post mdl-grid">
-        
+        <a href="/Natsu/tags/test/" style="font-size: 16px; color: #757575">test</a> <a href="/Natsu/tags/%E5%BF%83%E6%83%85/" style="font-size: 16px; color: #757575">心情</a>
     </div>
 </div>
 
@@ -415,7 +417,7 @@
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/Natsu/archives/2020/03/">March 2020<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/Natsu/archives/2020/03/">March 2020<span class="sidebar_archives-count">2</span></a>
             </ul>
         </li>
         
@@ -423,11 +425,26 @@
 
     <!-- Categories  -->
     
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                Categories
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/Natsu/categories/test/">test<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/Natsu/categories/%E9%9A%8F%E8%AE%B0/">随记<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
 
     <!-- Pages  -->
     
         <li>
-            <a href="/tags" title="Tags">
+            <a href="/Natsu/tags" title="Tags">
                 
                     <i class="material-icons sidebar-material-icons">cloud_circle</i>
                 
@@ -634,10 +651,8 @@ It will not impact the appearance and can give developers a lot of support :)
 
 <!-- Import prettify js  -->
 
+    
 
-    
-        <script>lsloader.load("hanabi","/Natsu/js/hanabi-browser-bundle.js?Pki5+pzkluqu53g+ouMWpA==", true)</script>
-    
 
 
 <!-- Window Load -->
@@ -649,10 +664,8 @@ It will not impact the appearance and can give developers a lot of support :)
     });
 
     
+        
     
-        
-        
-        HanabiBrowser.start('pre code',true);
     
 </script>
 
@@ -696,6 +709,21 @@ console.log('\n %c © Material Theme | Version: 1.5.2 | https://github.com/viose
 
                 </main>
             </div>
-        </body>
+        <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</body>
     
 </html>
